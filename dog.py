@@ -3,6 +3,7 @@ from pygame.locals import *
 import random
 
 
+# Dog class
 class Dog:
     """
     Represents an image of a dog. Keeps track of window to be drawn in,
@@ -10,8 +11,8 @@ class Dog:
     update() and draw().
     """
 
-    def __init__(self, window: object, window_width: int, window_height: int,
-                 image: object) -> None:
+    def __init__(self, window, window_width: int, window_height: int,
+                 image) -> None:
         # Initialize window so dogs can be drawn into window later
         self._window = window
         self._window_width = window_width
